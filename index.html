@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Jenkins Docker HTML Page</title>
+    <title>Jenkins Docker Deployment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            width: 50%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Jenkins + Docker 🚀</h1>
-    <p>This page is deployed using Jenkins Pipeline.</p>
+
+<div class="box">
+    <h1>🚀 Deployed via Jenkins & Docker</h1>
+    <p>This HTML page is deployed using CI/CD Pipeline.</p>
+    <p><strong>Build Version:</strong> 1.1</p>
+
+    <button onclick="showMessage()">Click Me</button>
+</div>
+
+<script>
+    function showMessage() {
+        alert("Deployment Successful 🎉");
+    }
+</script>
+
 </body>
 </html>
